@@ -1,0 +1,74 @@
+$playfairFont:'Playfair Display', serif;
+$sourceFont: 'Source Sans Pro', sans-serif;
+
+$purpleBlue: #353657;
+$pink:#FFA8CF;
+$turqoise: #63C8CE;
+
+body {
+	background-color: #EFEFF7;
+	-webkit-font-smoothing: antialiased;
+	-moz-font-smoothing: antialiased;
+	font-smoothing: antialiased;
+	font-weight: 400;
+	text-rendering: optimizeLegibility; 
+	font-family: $sourceFont;
+	font-size: 16px;
+	line-height: 20px;
+    color: $purpleBlue;
+}
+
+.logo {
+    font-family: $playfairFont;
+}
+
+nav a{
+    font-family: $playfairFont;
+    color: $purpleBlue;
+
+    &:hover {
+        text-decoration: none;
+        color: $turqoise;
+    }
+}
+
+.grad-bg {
+    background: rgb(48,49,81);
+    background: linear-gradient(0deg, rgba(48,49,81,1) 0%, rgba(104,106,149,1) 100%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 50px 0px;
+}
+
+h1 {
+    font-family: $playfairFont;
+    font-size: 52px;
+    line-height: 69px;
+    color: #fff;
+    margin: 50px 0px 20px 0px;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 36px;
+    color: #fff;
+}
+
+.main-icon svg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pink {
+    color: $pink;
+}
+
+.my-8 {
+    margin-top: ($spacer * 4);
+    margin-bottom: ($spacer * 4);
+}
