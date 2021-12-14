@@ -1,0 +1,36 @@
+$turqoise: #4abac1;
+$white: #fff;
+$purpleBlue: #353657;
+$darkTurquoise: #299ea5;
+
+.button {
+    padding: 6px 45px 8px 20px;
+    display: inline;
+    background: url("/images/arrow-right-solid.svg") no-repeat 85% 50%;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    margin: 30px 10px 0px 10px;
+}
+
+.button__turqoise {
+    background-color: $turqoise;
+    color: $white;
+    border: 2px solid $turqoise;
+
+    &:hover {
+        color: $white;
+        border: 2px solid $darkTurquoise;
+        background-color: $darkTurquoise;
+    }
+}
+
+.button__line {
+    border: 2px solid $white;
+    color: $white;
+
+    &:hover {
+        color: $white;
+        background-color: rgba(255, 255, 255, .15);
+    }
+}

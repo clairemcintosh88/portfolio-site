@@ -3,7 +3,8 @@ $sourceFont: 'Source Sans Pro', sans-serif;
 
 $purpleBlue: #353657;
 $pink:#FFA8CF;
-$turqoise: #63C8CE;
+$turqoise: #4abac1;
+$darkTurquoise: #299ea5;
 
 body {
 	background-color: #EFEFF7;
@@ -13,8 +14,8 @@ body {
 	font-weight: 400;
 	text-rendering: optimizeLegibility; 
 	font-family: $sourceFont;
-	font-size: 16px;
-	line-height: 20px;
+	font-size: 15px;
+	line-height: 22px;
     color: $purpleBlue;
 }
 
@@ -55,6 +56,37 @@ h2 {
     color: #fff;
 }
 
+h3 {
+    font-size: 22px;
+    line-height: 26px;
+    color: $purpleBlue;
+    font-family: $playfairFont;
+    margin-bottom: 0;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+    font-family: $sourceFont;
+    font-weight: 700;
+}
+
+.indexContactHeader, .indexContactP {
+    font-family: $playfairFont;
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.indexContactP {
+    color: $turqoise;
+    &:hover {
+        color: $darkTurquoise;
+        text-decoration: none;
+    }
+}
+
 .main-icon svg {
     position: absolute;
     left: 0;
@@ -68,7 +100,15 @@ h2 {
     color: $pink;
 }
 
-.my-8 {
-    margin-top: ($spacer * 4);
-    margin-bottom: ($spacer * 4);
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    background: url("/images/background.svg") no-repeat 98% 50%;
+    /*-webkit-transform: rotate(30deg);
+    -moz-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    -o-transform: rotate(30deg);
+    transform: rotate(30deg);*/
 }

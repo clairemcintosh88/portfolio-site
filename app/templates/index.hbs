@@ -1,16 +1,59 @@
 <div class="container">
     <div class="row no-gutters">
-        <div class="col-md-12 text-center grad-bg">
+        <div class="col">
+            <IntroPanel />
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col pb-5">
+            <WhatIDo />
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col pb-5">
+            <hr />
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col pb-5">
+            <WorkHomepage />
+        </div>
+    </div>
+    <div class="row no-gutters">
+        <div class="col pb-5">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6 pb-5">
+            <SectionTitle
+                @titleText="A bit about me"
+                @padding="pb-5"
+            />
             <div class="row">
-                <div class="main-icon">
-                    <SvgDevicesIcon />
+                <div class="col text-center">
+                    <p>I grew up in Newcastle upon Tyne but now live in Crawley, West sussex with my partner and son. I have been doing web design for the past 10 years and front end development for the past 5 years. I have experience in working on a range of projects, from a one-page design to web applications.</p>
+
+                    <button type="button" class="btn button button__turqoise">Find out more</button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-8 offset-md-2">
-                    <h1>Designer &amp; Developer</h1>
-                    <h2>Hi! I’m <b class="pink">Claire</b>. I’m a web designer and front-end developer based in West Sussex. I’m passionate about designing and building elegant and engaging experiences.</h2>
-                </div>
+        </div>
+        <div class="col-6 pb-5 text-center box">
+            <div class="">
+            <IconHeaderText 
+                @icon="message-icon.svg"
+                @iconWidth="54"
+                @iconHeight="59"
+                @header="Get in touch, I'd love to hear from you!"
+                @h4Styling="indexContactHeader"
+                @textLink={{true}}
+                @text="hello@claire-mcintosh.co.uk"
+                @linkUrl="mailto:hello@claire-mcintosh.co.uk"
+                @linkStyling="indexContactP"
+                @paddingIcon="px-4 pb-4"
+                @paddingHeader="px-4 pb-2"
+                @paddingText="px-4"
+            />
             </div>
         </div>
     </div>
