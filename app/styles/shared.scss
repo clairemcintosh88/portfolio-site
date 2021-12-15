@@ -26,6 +26,7 @@ body {
 nav a{
     font-family: $playfairFont;
     color: $purpleBlue;
+    font-size: 18px;
 
     &:hover {
         text-decoration: none;
@@ -105,4 +106,20 @@ h4 {
     align-items: center;
     justify-content: center;
     height: 220px;
+}
+
+.social-links {
+    margin: 0;
+    padding: 0;
+
+    li{
+        display: inline;
+        margin-right: 20px;
+
+        a {
+            color: #353657;
+            font-size: 18px;
+            font-family: $playfairFont;
+        }
+    }
 }
