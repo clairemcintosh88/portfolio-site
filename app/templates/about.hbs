@@ -1,0 +1,85 @@
+{{page-title "About"}}
+
+<div class="container-full animate__animated animate__fadeIn">
+    <div class="row no-gutters">
+        <div class="col">
+            <SubIntroPanel
+                @mainHeader="About" 
+                @subHeader="Find out more about me, my skills and download my CV"
+            />
+        </div>
+    </div>
+</div>
+
+<div class="container animate__animated animate__fadeIn">
+    <div class="row">
+        <div class="col-6">
+            pic
+        </div>
+        <div class="col-6">
+            text
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col pb-4">
+            <hr />
+        </div>
+    </div>
+
+    <SectionTitle
+        @titleText="My skills"
+        @padding="pb-5"
+    />
+
+    <div class="row no-gutters mb-4">
+        <div class="col text-center px-4">
+            <IconHeaderText 
+                @icon="browsers-icon.svg"
+                @iconWidth="108"
+                @iconHeight="117"
+                @header="Web &amp; UI design"
+                @text={{listText}}
+                @paddingIcon="px-4 pb-4"
+                @paddingHeader="px-4 pb-2"
+                @paddingText="px-4"
+            />
+        </div>
+        <div class="col text-center px-4">
+            <IconHeaderText 
+                @icon="mac-icon.svg"
+                @iconWidth="108"
+                @iconHeight="117"
+                @header="Front End Development"
+                @text="I build fast, scalable and bespoke websites, all to the latest web standards. I can look at a design and build it pixel perfect. I take great care ensuring the front end reflects the design, HTML &amp; CSS are my forte."
+                @paddingIcon="px-4 pb-4"
+                @paddingHeader="px-4 pb-2"
+                @paddingText="px-4"
+            />
+        </div>
+        <div class="col text-center px-4">
+            <IconHeaderText 
+                @icon="email-icon.svg"
+                @iconWidth="120"
+                @iconHeight="117"
+                @header="Email Design &amp; Development"
+                @text="I design and develop robust email templates for all your marketing needs. All of my designs are mobile freindly, are built to the latest standards and work across multiple email providers and devices."
+                @paddingIcon="px-4 pb-4"
+                @paddingHeader="px-4 pb-2"
+                @paddingText="px-4"
+            />
+        </div>
+    </div>
+
+    <div class="row no-gutters">
+        <div class="col pb-3">
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <MainFooter />
+        </div>
+    </div>
+</div>

@@ -1,14 +1,21 @@
 <div class="container-full animate__animated animate__fadeIn">
     <div class="row no-gutters">
         <div class="col">
-            <IntroPanel />
+            <IntroPanel
+                @mainIcon={{true}}
+                @mainHeader="Designer &amp; Developer" 
+                @subHeader="Hi! I’m Claire. I’m a web designer and front-end developer based in West Sussex. I’m passionate about designing and building elegant and engaging experiences."
+                @action="seeMoreClicked"
+            />
         </div>
     </div>
 </div>
 <div class="container animate__animated animate__fadeIn">
     <div class="row no-gutters">
         <div class="col pb-5">
-            <WhatIDo />
+            <WhatIDo 
+                @action="findOutMoreClicked"
+            />
         </div>
     </div>
     <div class="row no-gutters">
@@ -36,7 +43,7 @@
                 <div class="col text-center">
                     <p>I grew up in Newcastle upon Tyne but now live in Crawley, West sussex with my partner and son. I have been doing web design for the past 10 years and front end development for the past 5 years. I have experience in working on a range of projects, from a one-page design to web applications.</p>
 
-                    <button type="button" class="btn button button__turqoise">Find out more</button>
+                    <button {{action "findOutMoreClicked" }} type="button" title="Find out more" class="btn button button__turqoise">Find out more</button>
                 </div>
             </div>
         </div>

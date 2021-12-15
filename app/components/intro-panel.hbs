@@ -1,20 +1,21 @@
 <div class="row no-gutters">
-    <div class="col text-center grad-bg mb-5">
+    <div class="col text-center grad-bg py-5 mb-5">
+        {{#if mainIcon}}
         <div class="row no-gutters">
             <div class="main-icon">
                 <SvgDevicesIcon />
             </div>
         </div>
+        {{/if}}
         <div class="row no-gutters">
             <div class="col-md-8 offset-md-2">
-                <h1>Designer &amp; Developer</h1>
-                <h2>Hi! I’m <b class="pink">Claire</b>. I’m a web designer and front-end developer based in West Sussex. I’m passionate about designing and building elegant and engaging experiences.</h2>
+                <h1 class="white">{{mainHeader}}</h1>
+                <h2 class="white">{{subHeader}}</h2>
             </div>
         </div>
         <div class="row no-gutters">
             <div class="col">
-                <button type="button" class="btn button button__turqoise">See my work</button>
-                <button type="button" class="btn button button__line">Get in touch</button>
+                <button {{action "seeMoreClicked" }} type="button" title="See my work" class="btn button button__turqoise">See my work</button>
             </div>
         </div>
     </div>

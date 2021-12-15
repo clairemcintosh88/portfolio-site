@@ -9,6 +9,16 @@
     </div>
 </div>
 <div class="row">
+    <div class="col">
+        <ul>
+            {{#each product}}
+            {{item}} 
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<div class="row">
     <div class="col {{paddingText}}">
         {{#if textLink}}
             <a href="{{linkUrl}}" class={{linkStyling}} title={{linkUrl}}>{{this.text}}</a>

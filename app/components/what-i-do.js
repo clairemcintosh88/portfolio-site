@@ -3,7 +3,7 @@ import { action } from '@ember/object';
 
 export default Component.extend({
 
-    @action seeMoreClicked() {
+    @action findOutMoreClicked() {
         this.sendAction();
     }
 
