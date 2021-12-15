@@ -36,9 +36,9 @@ nav a{
 .grad-bg {
     background: rgb(48,49,81);
     background: linear-gradient(0deg, rgba(48,49,81,1) 0%, rgba(104,106,149,1) 100%);
-    -webkit-border-radius: 20px;
+    /*-webkit-border-radius: 20px;
     -moz-border-radius: 20px;
-    border-radius: 20px;
+    border-radius: 20px;*/
     padding: 50px 0px;
 }
 
@@ -105,10 +105,4 @@ h4 {
     align-items: center;
     justify-content: center;
     height: 220px;
-    background: url("/images/background.svg") no-repeat 98% 50%;
-    /*-webkit-transform: rotate(30deg);
-    -moz-transform: rotate(30deg);
-    -ms-transform: rotate(30deg);
-    -o-transform: rotate(30deg);
-    transform: rotate(30deg);*/
 }
