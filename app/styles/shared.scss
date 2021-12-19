@@ -141,5 +141,54 @@ h4 {
                 color: $turqoise;
             }
         }
+
+        @media (max-width: 576px) {
+            padding: 0 15px;
+            margin-right: 0px;
+        }
+
+    }
+
+    @media (max-width: 576px) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
     }
 }
+
+@media (max-width: 576px) {
+    .tc-m {
+        text-align: center !important;
+    }
+
+    .fw-m {
+        width: 100%;
+        display: block;
+    }
+
+    .hide-m {
+        display: none !important;
+    }
+
+    .main-icon svg {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -65px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 200px;
+        height: auto;
+    }
+
+    .mb-3-m{
+        margin-bottom: 3rem;
+    }
+
+    .px-1-m {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+ }
+

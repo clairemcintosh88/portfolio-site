@@ -77,8 +77,9 @@
     "edition": "octane"
   },
   "dependencies": {
+    "@fortawesome/ember-fontawesome": "^0.2.3",
     "animate.css": "^4.1.1",
     "bootstrap-scss": "^4.6.1",
-    "@fortawesome/ember-fontawesome": "^0.2.3"
+    "ember-google-fonts": "^1.0.1"
   }
 }
