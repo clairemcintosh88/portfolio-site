@@ -1,4 +1,4 @@
-$playfairFont:'Playfair Display', serif;
+$dmSerifDisplay:'DM Serif Display', serif;
 $sourceFont: 'Source Sans Pro', sans-serif;
 
 $purpleBlue: #353657;
@@ -7,7 +7,7 @@ $turqoise: #4abac1;
 $darkTurquoise: #299ea5;
 
 body {
-	background-color: #EFEFF7;
+	background-color: #F4F4FE;
 	-webkit-font-smoothing: antialiased;
 	-moz-font-smoothing: antialiased;
 	font-smoothing: antialiased;
@@ -20,11 +20,29 @@ body {
 }
 
 .logo {
-    font-family: $playfairFont;
+    font-family: $dmSerifDisplay;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 nav a{
-    font-family: $playfairFont;
+    font-family: $sourceFont;
+    color: #fff;
+    font-size: 18px;
+
+    &:hover {
+        text-decoration: none;
+        color: $pink;
+    }
+
+    &:active {
+        color: $pink !important;
+    }
+}
+
+.footer nav a{
+    font-family: $sourceFont;
     color: $purpleBlue;
     font-size: 18px;
 
@@ -34,25 +52,24 @@ nav a{
     }
 
     &:active {
-        color: #4abac1 !important;
+        color: $darkTurquoise !important;
     }
 }
 
 
 .grad-bg {
-    background: rgb(48,49,81);
-    background: linear-gradient(0deg, rgba(48,49,81,1) 0%, rgba(104,106,149,1) 100%);
+    background: #4E5094;
 }
 
 h1 {
-    font-family: $playfairFont;
+    font-family: $dmSerifDisplay;
     font-size: 52px;
-    line-height: 69px;
-    margin: 50px 0px 20px 0px;
+    line-height: 58px;
+    margin: 0px 0px 20px 0px;
 }
 
 .mainHeader {
-    font-family: $playfairFont;
+    font-family: $dmSerifDisplay;
     font-size: 42px;
     line-height: 46px;
     margin: 0px 0px 15px 0px;
@@ -72,7 +89,7 @@ h3 {
     font-size: 22px;
     line-height: 26px;
     color: $purpleBlue;
-    font-family: $playfairFont;
+    font-family: $dmSerifDisplay;
     margin-bottom: 0;
 }
 
@@ -83,10 +100,14 @@ h4 {
     font-weight: 700;
 }
 
+p:last-child {
+    margin-bottom: 0;
+}
+
 .indexContactHeader, .indexContactP {
-    font-family: $playfairFont;
+    font-family: $dmSerifDisplay;
     font-size: 22px;
-    line-height: 26px;
+    line-height: 30px;
     font-weight: 500;
     margin-bottom: 0;
 }
@@ -134,7 +155,7 @@ h4 {
         a {
             color: #353657;
             font-size: 18px;
-            font-family: $playfairFont;
+            font-family: $dmSerifDisplay;
 
             &:hover {
                 text-decoration: none;
@@ -180,15 +201,5 @@ h4 {
         width: 200px;
         height: auto;
     }
-
-    .mb-3-m{
-        margin-bottom: 3rem;
-    }
-
-    .px-1-m {
-        padding-left: 1rem !important;
-        padding-right: 1rem !important;
-    }
-
  }
 

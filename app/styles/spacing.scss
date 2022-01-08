@@ -2,3 +2,27 @@
     margin-top: ($spacer * 4);
     margin-bottom: ($spacer * 4);
 }
+
+@media (max-width: 576px) {
+    .mb-3-m{
+        margin-bottom: 3rem;
+    }
+
+    .my-3-m{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .px-1-m {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
+    .mt-0-m {
+        margin-top: 0 !important;
+    }
+
+    .mt-1-m {
+        margin-top: 1rem !important;
+    }
+}

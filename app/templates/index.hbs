@@ -1,4 +1,11 @@
-<div class="container-full animate__animated animate__fadeIn">
+<div class="container-full animate__animated animate__fadeIn grad-bg">
+    <div class="row no-gutters">
+        <div class="container pt-5">
+            <MainHeader />
+        </div>
+    </div>
+</div>
+<div class="container-full animate__animated animate__fadeIn grad-bg mb-5">
     <div class="row no-gutters">
         <div class="col">
             <IntroPanel
@@ -58,6 +65,7 @@
                 @text="hello@claire-mcintosh.co.uk"
                 @linkUrl="mailto:hello@claire-mcintosh.co.uk"
                 @linkStyling="indexContactP"
+                @listItem={{false}}
                 @paddingIcon="px-4 pb-4"
                 @paddingHeader="px-4 pb-2"
                 @paddingText="px-4"
