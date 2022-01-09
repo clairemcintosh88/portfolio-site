@@ -15,10 +15,7 @@ module.exports = function (environment) {
         // Prevent Ember Data from overriding Date.parse.
         Date: false,
       },
-      googleFonts: [
-        'Playfair Display:400,600',
-        'Source Sans Pro:300,400,700',
-      ]
+      googleFonts: ['Playfair Display:400,600', 'Source Sans Pro:300,400,700'],
     },
 
     APP: {

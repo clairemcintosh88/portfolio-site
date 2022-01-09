@@ -41,41 +41,69 @@
     />
 
     <div class="row no-gutters mb-4">
-        <div class="col text-center px-4">
-            <IconHeaderText 
-                @icon="browsers-icon.svg"
-                @iconWidth="108"
-                @iconHeight="117"
-                @header="Web &amp; UI design"
-                @text={{listText}}
-                @paddingIcon="px-4 pb-4"
-                @paddingHeader="px-4 pb-2"
-                @paddingText="px-4"
-            />
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center px-4">
+            <div class="row">
+                <div class="col text-center">
+                    <h4>Web &amp; UI design</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col skills-list">
+                    <ul>
+                        <li>Design concepts</li>
+                        <li>Responsive design</li>
+                        <li>Wire frames using Balsamiq</li>
+                        <li>Prototyping with Marvel</li>
+                        <li>Sketch, Photoshop &amp; Illustrator</li>
+                        <li>Logo design</li>
+                        <li>Business cards</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col text-center px-4">
-            <IconHeaderText 
-                @icon="mac-icon.svg"
-                @iconWidth="108"
-                @iconHeight="117"
-                @header="Front End Development"
-                @text="I build fast, scalable and bespoke websites, all to the latest web standards. I can look at a design and build it pixel perfect. I take great care ensuring the front end reflects the design, HTML &amp; CSS are my forte."
-                @paddingIcon="px-4 pb-4"
-                @paddingHeader="px-4 pb-2"
-                @paddingText="px-4"
-            />
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center px-4">
+            <div class="row">
+                <div class="col text-center">
+                    <h4 class={{@h4Styling}}>Front End Development</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col skills-list">
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Ember</li>
+                        <li>Handlebars</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="col text-center px-4">
-            <IconHeaderText 
-                @icon="email-icon.svg"
-                @iconWidth="120"
-                @iconHeight="117"
-                @header="Email Design &amp; Development"
-                @text="I design and develop robust email templates for all your marketing needs. All of my designs are mobile freindly, are built to the latest standards and work across multiple email providers and devices."
-                @paddingIcon="px-4 pb-4"
-                @paddingHeader="px-4 pb-2"
-                @paddingText="px-4"
-            />
+
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 text-center px-4">
+            <div class="row">
+                <div class="col text-center">
+                    <h4 class={{@h4Styling}}>Email Design &amp; Development</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col skills-list">
+                    <ul>
+                        <li>Responsive email design and build</li>
+                        <li>Testing in Litmus</li>
+                        <li>Debugging</li>
+                        <li>Campaign monitor, MailChimp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col text-center pb-4">
+            <button {{action "findOutMoreClicked" }} type="button" title="See more work" class="btn button button__turqoise">Download my CV</button>
         </div>
     </div>
 
