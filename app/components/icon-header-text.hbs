@@ -1,19 +1,19 @@
 <div class="row">
-    <div class="col {{@paddingIcon}}">
-        <img src="../images/{{@icon}}" width={{@iconWidth}} height={{@iconHeight}} class="test" alt="" />
+    <div class="col {{paddingIcon}}">
+        <img src="../images/{{this.icon}}" width={{this.iconWidth}} height={{this.iconHeight}} class="test" alt="" />
     </div>
 </div>
 <div class="row">
-    <div class="col {{@paddingHeader}}">
-        <h4 class={{@h4Styling}}>{{@header}}</h4>
+    <div class="col {{paddingHeader}}">
+        <h4 class={{this.h4Styling}}>{{this.header}}</h4>
     </div>
 </div>
 <div class="row">
-    <div class="col {{@paddingText}}">
+    <div class="col {{paddingText}}">
         {{#if textLink}}
-            <a href="{{@linkUrl}}" class={{@linkStyling}} title={{@linkUrl}}>{{@text}}</a>
+            <a href="{{this.linkUrl}}" class={{linkStyling}} title={{this.linkUrl}}>{{this.text}}</a>
         {{else}}
-            <p class={{@pStyling}}>{{@text}}</p>
+            <p class={{pStyling}}>{{this.text}}</p>
         {{/if}}
     </div>
 </div>

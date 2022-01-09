@@ -1,7 +1,4 @@
-import Component from '@glimmer/component';
-import { tracked } from '@glimmer/tracking';
+import Component from '@ember/component';
 
-export default class IconHeaderTextComponent extends Component {
-
-
-}
+export default Component.extend({
+});
